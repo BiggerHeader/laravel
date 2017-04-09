@@ -42,7 +42,7 @@ class ConfigController extends Controller
                     break;
             }
         }
-        return view('Admin.Config.index', compact('data'));
+        return view('Admin.config.index', compact('data'));
     }
 
     /**
@@ -100,7 +100,7 @@ class ConfigController extends Controller
     public
     function create()
     {
-        return view('Admin.Config.add');
+        return view('Admin.config.add');
     }
 
     /**
@@ -137,7 +137,7 @@ class ConfigController extends Controller
             }
 
         }
-        return view('Admin.Config.index');
+        return view('Admin.config.index');
     }
 
     /**
@@ -163,7 +163,7 @@ class ConfigController extends Controller
     function edit($config_id)
     {
         $field = Config::find($config_id);
-        return view('Admin.Config.edit', compact('field'));
+        return view('Admin.config.edit', compact('field'));
     }
 
     /**

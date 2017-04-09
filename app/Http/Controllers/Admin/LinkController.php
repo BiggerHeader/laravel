@@ -14,7 +14,7 @@ class LinkController extends Controller
     public function index()
     {
         $data = Link::orderBy('link_order','asc')->get();
-        return view('Admin.Links.index',compact('data'));
+        return view('Admin.links.index',compact('data'));
     }
     /**
      *排序友情链接
@@ -42,7 +42,7 @@ class LinkController extends Controller
      */
     public function create()
     {
-        return view('Admin.Links.add');
+        return view('Admin.links.add');
     }
     /**
      * method : post
@@ -98,7 +98,7 @@ class LinkController extends Controller
     public function edit($link_id)
     {
         $field = Link::find($link_id);
-        return view('Admin.Links.edit',compact('field'));
+        return view('Admin.links.edit',compact('field'));
     }
     /**
      * 更改
