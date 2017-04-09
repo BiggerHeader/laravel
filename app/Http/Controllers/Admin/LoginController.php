@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-require_once 'resources/myself/Code.class.php';
+require_once 'myself/Code.class.php';
 use App\Http\Model\Admin;
 use App\User;
 use Illuminate\Support\Facades\Validator;
@@ -21,6 +21,7 @@ class LoginController extends CommonController
 
         //验证登录
         if ($data = Input::all()) {
+            session_start();
             if (strtoupper($data['code']) != $_SESSION['code']) {
                 //返回之前的页面
                 return back()->with('msg', '验证码错误');

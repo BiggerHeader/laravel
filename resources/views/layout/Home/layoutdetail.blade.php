@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     @yield('seo')
 
-    <link href="{{asset('resources/assets/Home/css/base.css')}}" rel="stylesheet">
-    <link href="{{asset('resources/assets/Home/css/index.css')}}" rel="stylesheet">
-    <link href="{{asset('resources/assets/Home/css/new.css')}}" rel="stylesheet">
-    <link href="{{asset('resources/assets/Home/css/style.css')}}" rel="stylesheet">
-    <script type="text/javascript" src="{{asset('resources/assets/style/js/jquery.js')}}"></script>
+    <link href="{{asset('Home/css/base.css')}}" rel="stylesheet">
+    <link href="{{asset('Home/css/index.css')}}" rel="stylesheet">
+    <link href="{{asset('Home/css/new.css')}}" rel="stylesheet">
+    <link href="{{asset('Home/css/style.css')}}" rel="stylesheet">
+    <script type="text/javascript" src="{{asset('style/js/jquery.js')}}"></script>
     <script type="text/javascript" src="{{asset('myextend/layer/layer.js')}}"></script>
 
-    <link rel="stylesheet" href="{{asset('resources/assets/style/css/ch-ui.admin.css')}}">
-    <link rel="stylesheet" href="{{asset('resources/assets/style/font/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('style/css/ch-ui.admin.css')}}">
+    <link rel="stylesheet" href="{{asset('style/font/css/font-awesome.min.css')}}">
 
     <!--[if lt IE 9]>
-    <script src="{{asset('resources/assets/Home/js/modernizr.js')}}"></script>
+    <script src="{{asset('Home/js/modernizr.js')}}"></script>
     <![endif]-->
     @include('editor::head')
 
@@ -24,7 +24,8 @@
 <header>
     <div id="logo"><a href="/"></a></div>
     <nav class="topnav" id="topnav">
-        @foreach( $navs as $v)<a href="{{$v->nav_url}}"><span>{{$v->nav_title}}</span><span class="en">{{$v->nav_name}}</span></a>@endforeach
+        @foreach( $navs as $v)<a href="{{$v->nav_url}}"><span>{{$v->nav_title}}</span><span
+                    class="en">{{$v->nav_name}}</span></a>@endforeach
     </nav>
 </header>
 @section('content')
@@ -34,7 +35,8 @@
         </h3>
         <ul class="rank">
             @foreach($news as $v)
-                <li><a href="{{url('/detail/'.$v->art_id)}}" title="{{$v->art_title}}" target="_blank">{{$v->art_title}}</a></li>
+                <li><a href="{{url('/detail/'.$v->art_id)}}" title="{{$v->art_title}}"
+                       target="_blank">{{$v->art_title}}</a></li>
             @endforeach
         </ul>
         <h3 class="ph">
@@ -42,7 +44,8 @@
         </h3>
         <ul class="paih">
             @foreach($hot as $v)
-                <li><a href="{{url('/detail/'.$v->art_id)}}" title="{{$v->art_title}}" target="_blank">{{$v->art_title}}</a></li>
+                <li><a href="{{url('/detail/'.$v->art_id)}}" title="{{$v->art_title}}"
+                       target="_blank">{{$v->art_title}}</a></li>
             @endforeach
         </ul>
         <h3 class="links">
@@ -58,28 +61,29 @@
         </h3>
         <ul class="mytag">
             @foreach($showtag as $t)
-                <li><a href="{{url('/tag/'.$t->tag_id)}}" title="热门标签"  style="background-color:{{$t->tag_color}}">{{$t->tag_name}}</a></li>
+                <li><a href="{{url('/tag/'.$t->tag_id)}}" title="热门标签"
+                       style="background-color:{{$t->tag_color}}">{{$t->tag_name}}</a></li>
             @endforeach
         </ul>
         <style>
-            .mytag li{
+            .mytag li {
                 float: left;
             }
-            .mytag li a{
+
+            .mytag li a {
                 display: inline-block;
                 width: auto;
                 margin: 2px 10px;
-                padding: 5px ;
+                padding: 5px;
                 line-height: 30px;
                 font-size: 20px;
             }
         </style>
-        </style>
+
     </div>
 @show
 <footer>
-    <p>{!!Config::get('web.copyright')!!} |  {!!Config::get('web.count')!!} | {!!Config::get('web.cnzz')!!}
-    </p>
+    <p> {!!Config::get('web.copyright')!!} | {!!Config::get('web.count')!!} | {!!Config::get('web.cnzz')!!}</p>
 </footer>
 </body>
 </html>

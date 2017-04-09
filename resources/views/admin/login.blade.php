@@ -10,8 +10,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="{{asset('resources/assets/style/css/ch-ui.admin.css')}}">
-    <link rel="stylesheet" href="{{asset('resources/assets/style/font/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('style/css/ch-ui.admin.css')}}">
+    <link rel="stylesheet" href="{{asset('style/font/css/font-awesome.min.css')}}">
 </head>
 <body style="background:#F3F3F4;">
 <div class="login_box">
@@ -33,7 +33,7 @@
                     <span><i class="fa fa-lock"></i></span>
                 </li>
                 <li>
-                    <input type="text" class="code" name="code" value="code"/>
+                    <input type="text" class="code" name="code" placeholder="填写验证码"/>
                     <span><i class="fa fa-check-square-o"></i></span>
                     <img src="{{url('admin/verify')}}" alt="" onclick=" this.src  = '{{url("admin/verify")}}?'+  Math.random();">
                 </li>
@@ -42,7 +42,7 @@
                 </li>
             </ul>
         </form>
-        <p><a href="#">返回首页</a> &copy; 2016 Powered by <a href="http://www.houdunwang.com" target="_blank">http://www.houdunwang.com</a></p>
+        <p><a href="{{asset('')}}">返回首页</a>{!!Config::get('web.copyright')!!}</p>
     </div>
 </div>
 </body>

@@ -1,5 +1,5 @@
 <?php return  array (
-  'copyright' => '© 2016-2016 <a href="https://datou.com">大头</a>
+  'copyright' => '© 2016-2016  Powered by  <a href="https://datou.com">大头</a>
 ',
   'title' => '大头博客',
   'keywords' => '魏曦教你学，Yii2.0，视频教程，Yii，PHP框架，PHP，魏曦IT学院，laravel,PHP视频',
