@@ -4,7 +4,6 @@
     <list default="true" id="64206f72-e7c4-4449-985c-3d1dbd6faf79" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
+      <file leaf-file-name="TagsController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/TagsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="1872">
+              <caret line="90" column="38" lean-forward="false" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -126,7 +125,6 @@
         <option value="$PROJECT_DIR$/resources/views/admin/article/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/TagController.php" />
         <option value="$PROJECT_DIR$/app/Http/Model/Tag.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/TagsController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/tag/add.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/tag/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/tag/edit.blade.php" />
@@ -167,6 +165,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ConfigController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/LinkController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/TagsController.php" />
       </list>
     </option>
   </component>
@@ -620,12 +619,12 @@
       <workItem from="1490574865367" duration="12000" />
       <workItem from="1490792588383" duration="603000" />
       <workItem from="1491625739494" duration="4326000" />
-      <workItem from="1491659190722" duration="9488000" />
+      <workItem from="1491659190722" duration="9598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="350955000" />
+    <option name="totallyTimeSpent" value="351065000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -3282,42 +3281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/TagsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1483270220939" expanded="false" signature="50:239" ph="..." />
-            <marker date="1483270220939" expanded="true" signature="280:2271" ph="{...}" />
-            <marker date="1483270220939" expanded="true" signature="317:413" ph="{...}" />
-            <marker date="1483270220939" expanded="true" signature="422:461" ph=" method :get ..." />
-            <marker date="1483270220939" expanded="true" signature="492:542" ph="{...}" />
-            <marker date="1483270220939" expanded="true" signature="551:594" ph=" method : post ..." />
-            <marker date="1483270220939" expanded="true" signature="624:1396" ph="{...}" />
-            <marker date="1483270220939" expanded="true" signature="677:1351" ph="..." />
-            <marker date="1483270220939" expanded="true" signature="718:773" ph="..." />
-            <marker date="1483270220939" expanded="true" signature="815:877" ph="..." />
-            <marker date="1483270220939" expanded="true" signature="1000:1265" ph="..." />
-            <marker date="1483270220939" expanded="true" signature="1108:1175" ph="..." />
-            <marker date="1483270220939" expanded="true" signature="1183:1251" ph="..." />
-            <marker date="1483270220939" expanded="true" signature="1273:1340" ph="..." />
-            <marker date="1483270220939" expanded="true" signature="1405:1423" ph=" 分类显示 ..." />
-            <marker date="1483270220939" expanded="true" signature="1452:1486" ph="{...}" />
-            <marker date="1483270220939" expanded="true" signature="1495:1513" ph=" 分类编辑 ..." />
-            <marker date="1483270220939" expanded="true" signature="1549:1674" ph="{...}" />
-            <marker date="1483270220939" expanded="true" signature="1683:1701" ph=" 分类修改 ..." />
-            <marker date="1483270220939" expanded="true" signature="1739:2044" ph="{...}" />
-            <marker date="1483270220939" expanded="true" signature="1803:2037" ph="..." />
-            <marker date="1483270220939" expanded="true" signature="1892:1951" ph="..." />
-            <marker date="1483270220939" expanded="true" signature="1959:2027" ph="..." />
-            <marker date="1483270220939" expanded="true" signature="2053:2071" ph=" 分类删除 ..." />
-            <marker date="1483270220939" expanded="true" signature="2110:2269" ph="{...}" />
-            <marker date="1483270220939" expanded="true" signature="2192:2223" ph="..." />
-            <marker date="1483270220939" expanded="true" signature="2231:2262" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -3393,6 +3356,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <marker date="1491714399715" expanded="false" signature="50:130" ph="..." />
+            <marker date="1491714399715" expanded="true" signature="177:345" ph="{...}" />
+            <marker date="1491714399715" expanded="true" signature="208:266" ph="..." />
+            <marker date="1491714399715" expanded="true" signature="296:343" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/TagsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1872">
+          <caret line="90" column="38" lean-forward="false" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
           <folding />
         </state>
       </provider>

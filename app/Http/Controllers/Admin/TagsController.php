@@ -16,7 +16,7 @@ class TagsController extends Controller
     public function index()
     {
         $data = Tag::get();
-        return view("admin.tag.index",compact('data'));
+        return view("Admin.tag.index",compact('data'));
     }
 
     /**
@@ -50,7 +50,7 @@ class TagsController extends Controller
                 //添加导数据库  用create 方法
                 $res = Tag::create($data);
                 if ($res) {
-                    return redirect('admin/tag');
+                    return redirect('Admin/tag');
                 } else {
                     return back()->with('数据添加错误');
                 }
@@ -88,7 +88,7 @@ class TagsController extends Controller
         if ($data = Input::except('_token', '_method')) {
             $res = tag::where("tag_id", $tag_id)->update($data);
             if ($res) {
-                return redirect('admin/tag');
+                return redirect('Admin/tag');
             } else {
                 return back()->with('errors', '更新失败');
             }
