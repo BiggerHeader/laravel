@@ -60,7 +60,7 @@ class ArticleController extends Controller
             //添加导数据库  用create 方法
             $res = Article::create($input);
             if ($res) {
-                return redirect('admin/article');
+                return redirect('Admin/article');
             } else {
                 return back()->with('数据添加错误');
             }
@@ -90,7 +90,7 @@ class ArticleController extends Controller
             $data['art_tags']  = ",".implode(",",$data['art_tags']).",";
             $res = Article::where("art_id", $art_id)->update($data);
             if($res){
-                return  redirect('admin/article');
+                return  redirect('Admin/article');
             }else{
                 return back()->with('errors','更新失败');
             }

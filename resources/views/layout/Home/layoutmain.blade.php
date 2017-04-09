@@ -17,7 +17,6 @@
 </head>
 <body>
 <header>
-    {{asset('Home/css/base.css')}}
     <div id="logo"><a href="/"></a></div>
     <nav class="topnav" id="topnav">
         @foreach( $navs as $v)

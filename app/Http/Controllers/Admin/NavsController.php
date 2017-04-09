@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Model\Navs;
+use App\Http\Model\navs;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -10,11 +10,11 @@ use App\Http\Controllers\Controller;
 use App\Http\Model\nav;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
-class NavsController extends Controller
+class navsController extends Controller
 {
     public function index()
     {
-        $data = Navs::orderBy('nav_order','asc')->get();
+        $data = navs::orderBy('nav_order','asc')->get();
         return view('Admin.navs.index',compact('data'));
     }
     /**
@@ -23,7 +23,7 @@ class NavsController extends Controller
     public function navorder()
     {
         if ($data = Input::all()) {
-            $isExist = Navs::find($data['nav_id']);
+            $isExist = navs::find($data['nav_id']);
             if ($isExist) {
                 $isExist->nav_order = $data['val'];
                 $res = $isExist->update();
@@ -43,7 +43,7 @@ class NavsController extends Controller
      */
     public function create()
     {
-        return view('Admin.Navs.add');
+        return view('Admin.navs.add');
     }
     /**
      * method : post
@@ -70,9 +70,9 @@ class NavsController extends Controller
             $validate =  Validator::make($data,$ruls,$msg);
             if($validate->passes()){
                 //添加导数据库  用create 方法
-                $res =  Navs::create($data);
+                $res =  navs::create($data);
                 if($res){
-                    return redirect('admin/nav');
+                    return redirect('Admin/nav');
                 }else{
                     return back()->with('数据添加错误');
                 }
@@ -81,14 +81,14 @@ class NavsController extends Controller
             }
 
         }
-        return view('Admin.Navs.add');
+        return view('Admin.navs.add');
     }
     /**
      * 链接删除
      */
     public function destroy($nav_id)
     {
-        $res = Navs::where("nav_id",$nav_id)->delete();
+        $res = navs::where("nav_id",$nav_id)->delete();
         if($res){
             return 1;
         }else{
@@ -100,8 +100,8 @@ class NavsController extends Controller
      */
     public function edit($nav_id)
     {
-        $field = Navs::find($nav_id);
-        return view('Admin.Navs.edit',compact('field'));
+        $field = navs::find($nav_id);
+        return view('Admin.navs.edit',compact('field'));
     }
     /**
      * 更改
@@ -109,9 +109,9 @@ class NavsController extends Controller
     public function update($nav_id)
     {
         if($data = Input::except('_token','_method')){
-            $res = Navs::where("nav_id", $nav_id)->update($data);
+            $res = navs::where("nav_id", $nav_id)->update($data);
             if($res){
-                return  redirect('admin/nav');
+                return  redirect('Admin/nav');
             }else{
                 return back()->with('errors','更新失败');
             }

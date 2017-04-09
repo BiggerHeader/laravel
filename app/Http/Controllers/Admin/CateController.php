@@ -77,7 +77,7 @@ class CateController extends CommonController
                //添加导数据库  用create 方法
                $res =  Cate::create($data);
                if($res){
-                   return redirect('admin/cate');
+                   return redirect('Admin/cate');
                }else{
                     return back()->with('数据添加错误');
                }
@@ -118,7 +118,7 @@ class CateController extends CommonController
             }
             $res = Cate::where("cate_id", $cate_id)->update($data);
             if($res){
-                return  redirect('admin/cate');
+                return  redirect('Admin/cate');
             }else{
                 return back()->with('errors','更新失败');
             }

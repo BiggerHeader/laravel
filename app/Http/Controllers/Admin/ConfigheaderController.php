@@ -19,7 +19,7 @@ class ConfigheaderController extends CommonController
             $array =  explode("\r\n",$r->h_motto);
             $res[$key]->h_motto = $array;
         }
-        return view('admin.fgheader.index', compact('res'));
+        return view('Admin.fgheader.index', compact('res'));
     }
 
     public function create()
@@ -52,7 +52,7 @@ class ConfigheaderController extends CommonController
                 //添加导数据库  用create 方法
                 $res = Fgheader::create($data);
                 if ($res) {
-                    return redirect('admin/fgheader');
+                    return redirect('Admin/fgheader');
                 } else {
                     return back()->with('数据添加错误');
                 }
@@ -70,7 +70,7 @@ class ConfigheaderController extends CommonController
     public function edit($h_id)
     {
         $data = Fgheader::find($h_id);
-        return view("admin.fgheader.edit", compact("data"));
+        return view("Admin.fgheader.edit", compact("data"));
     }
 
     public function update($h_id)
@@ -78,7 +78,7 @@ class ConfigheaderController extends CommonController
         if ($data = Input::except('_token', '_method')) {
             $res = Fgheader::where("h_id", $h_id)->update($data);
             if ($res) {
-                return redirect('admin/fgheader');
+                return redirect('Admin/fgheader');
             } else {
                 return back()->with('errors', '更新失败');
             }
