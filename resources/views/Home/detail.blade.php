@@ -4,7 +4,6 @@
     <title>{{$data->art_title}}-{{Config::get('web.title')}}</title>
     <meta name="keywords" content="{{$data->cate_keywords}}"/>
     <meta name="description" content="{{$data->cate_desc}}"/>
-
 @endsection
 @section('content')
     <article class="blogs">
@@ -199,7 +198,7 @@
             </form>
             <style>
                 .leave-header a {
-                    background: url({{url('/resources/assets/Home/images/datou.jpg')}}) 2px center no-repeat;
+                    background: url({{url('Home/images/datou.jpg')}}) 2px center no-repeat;
                     background-size: 50px 50px;
                     background-position: bottom left;
                     border-top: 1px solid rgba(54, 65, 20, 0.58);
@@ -379,24 +378,17 @@
         </script>
         <aside class="right">
             <!-- Baidu Button BEGIN -->
-            <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"><a class="bds_tsina"></a><a
+            {{--<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"><a class="bds_tsina"></a><a
                         class="bds_qzone"></a><a class="bds_tqq"></a><a class="bds_renren"></a><span
                         class="bds_more"></span><a class="shareCount"></a></div>
             <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585"></script>
             <script type="text/javascript" id="bdshell_js"></script>
             <script type="text/javascript">
                 document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000)
-            </script>
+            </script>--}}
             <!-- Baidu Button END -->
             <div class="blank"></div>
             @parent
-            {{-- <div class="visitors">
-                 <h3>
-                     <p>最近访客</p>
-                 </h3>
-                 <ul>
-                 </ul>
-             </div>--}}
         </aside>
     </article>
 

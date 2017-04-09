@@ -8,7 +8,7 @@
     <!--面包屑导航 结束-->
 
     <!--结果页快捷搜索框 开始-->
-    <div class="search_wrap">
+    {{--<div class="search_wrap">
         <form action="" method="post">
             <table class="search_tab">
                 <tr>
@@ -26,7 +26,7 @@
                 </tr>
             </table>
         </form>
-    </div>
+    </div>--}}
     <!--结果页快捷搜索框 结束-->
 
     <!--搜索结果页面 列表 开始-->

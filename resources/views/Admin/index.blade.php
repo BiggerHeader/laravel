@@ -1,7 +1,5 @@
 @extends('layout.layout1')
 @section('content')
-
-
 	<!--头部 开始-->
 	<div class="top_box">
 		<div class="top_left">
@@ -60,7 +58,7 @@
 	<!--主体部分 结束-->
 <!--底部 开始-->
 <div class="bottom_box">
-	CopyRight © 2017. Powered By <a href="http://www.datou.com">http://www.datou.com</a>.
+	CopyRight © 2017. Powered By <a href="http://www.datou.com">http://www.dtcode.com</a>.
 </div>
 <!--底部 结束-->
 @endsection

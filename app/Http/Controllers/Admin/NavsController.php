@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Model\navs;
+use App\Http\Model\Navs;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
