@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-require_once 'myself/Code.class.php';
+require_once '/myself/Code.class.php';
 use App\Http\Model\Admin;
 use App\User;
 use Illuminate\Support\Facades\Validator;
