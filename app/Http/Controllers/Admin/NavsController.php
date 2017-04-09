@@ -14,7 +14,7 @@ class NavsController extends Controller
 {
     public function index()
     {
-        $data = navs::orderBy('nav_order','asc')->get();
+        $data = Navs::orderBy('nav_order','asc')->get();
         return view('Admin.navs.index',compact('data'));
     }
     /**
@@ -23,7 +23,7 @@ class NavsController extends Controller
     public function navorder()
     {
         if ($data = Input::all()) {
-            $isExist = navs::find($data['nav_id']);
+            $isExist = Navs::find($data['nav_id']);
             if ($isExist) {
                 $isExist->nav_order = $data['val'];
                 $res = $isExist->update();
@@ -70,7 +70,7 @@ class NavsController extends Controller
             $validate =  Validator::make($data,$ruls,$msg);
             if($validate->passes()){
                 //添加导数据库  用create 方法
-                $res =  navs::create($data);
+                $res =  Navs::create($data);
                 if($res){
                     return redirect('Admin/nav');
                 }else{
@@ -88,7 +88,7 @@ class NavsController extends Controller
      */
     public function destroy($nav_id)
     {
-        $res = navs::where("nav_id",$nav_id)->delete();
+        $res = Navs::where("nav_id",$nav_id)->delete();
         if($res){
             return 1;
         }else{
@@ -100,7 +100,7 @@ class NavsController extends Controller
      */
     public function edit($nav_id)
     {
-        $field = navs::find($nav_id);
+        $field = Navs::find($nav_id);
         return view('Admin.navs.edit',compact('field'));
     }
     /**
@@ -109,7 +109,7 @@ class NavsController extends Controller
     public function update($nav_id)
     {
         if($data = Input::except('_token','_method')){
-            $res = navs::where("nav_id", $nav_id)->update($data);
+            $res = Navs::where("nav_id", $nav_id)->update($data);
             if($res){
                 return  redirect('Admin/nav');
             }else{
