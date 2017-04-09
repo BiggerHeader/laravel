@@ -10,7 +10,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Model\nav;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
-class navsController extends Controller
+class NavsController extends Controller
 {
     public function index()
     {
