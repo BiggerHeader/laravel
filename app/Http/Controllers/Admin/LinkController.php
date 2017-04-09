@@ -69,7 +69,7 @@ class LinkController extends Controller
                 //添加导数据库  用create 方法
                 $res =  Link::create($data);
                 if($res){
-                    return redirect('admin/link');
+                    return redirect('Admin/link');
                 }else{
                     return back()->with('数据添加错误');
                 }
@@ -108,7 +108,7 @@ class LinkController extends Controller
         if($data = Input::except('_token','_method')){
             $res = Link::where("link_id", $link_id)->update($data);
             if($res){
-                return  redirect('admin/link');
+                return  redirect('Admin/link');
             }else{
                 return back()->with('errors','更新失败');
             }
