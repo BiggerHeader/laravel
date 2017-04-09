@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64206f72-e7c4-4449-985c-3d1dbd6faf79" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/LinkController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LinkController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LinkController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LinkController.php">
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="111" column="18" lean-forward="true" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
+            <state relative-caret-position="441">
+              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -54,7 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>logo</find>
       <find>blogs</find>
       <find>dots</find>
       <find>cate</find>
@@ -84,6 +84,7 @@
       <find>Config</find>
       <find>Config.</find>
       <find>navs.</find>
+      <find>admin</find>
     </findStrings>
     <replaceStrings>
       <replace>Confg</replace>
@@ -106,6 +107,7 @@
       <replace>url</replace>
       <replace>links</replace>
       <replace>config.</replace>
+      <replace>Admin</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -114,7 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/editor.php" />
         <option value="$PROJECT_DIR$/public/plugin/editor/css/markdown.css" />
         <option value="$PROJECT_DIR$/public/plugin/editor/css/panle.css" />
@@ -165,6 +166,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ConfigController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/LinkController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" />
       </list>
     </option>
   </component>
@@ -618,12 +620,12 @@
       <workItem from="1490574865367" duration="12000" />
       <workItem from="1490792588383" duration="603000" />
       <workItem from="1491625739494" duration="4326000" />
-      <workItem from="1491659190722" duration="9379000" />
+      <workItem from="1491659190722" duration="9488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="350846000" />
+    <option name="totallyTimeSpent" value="350955000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -686,13 +688,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Inspire.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -3358,6 +3353,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="111" column="18" lean-forward="true" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
+          <folding>
+            <marker date="1491714281247" expanded="false" signature="50:240" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="280:2811" ph="{...}" />
+            <marker date="1491714281247" expanded="true" signature="310:438" ph="{...}" />
+            <marker date="1491714281247" expanded="true" signature="446:465" ph="排序友情链接 ..." />
+            <marker date="1491714281247" expanded="true" signature="499:906" ph="{...}" />
+            <marker date="1491714281247" expanded="true" signature="541:872" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="622:862" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="746:793" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="801:848" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="914:957" ph=" method :get ..." />
+            <marker date="1491714281247" expanded="true" signature="988:1040" ph="{...}" />
+            <marker date="1491714281247" expanded="true" signature="1048:1089" ph=" method : post ..." />
+            <marker date="1491714281247" expanded="true" signature="1119:2051" ph="{...}" />
+            <marker date="1491714281247" expanded="true" signature="1170:2005" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="1209:1344" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="1385:1537" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="1657:1921" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="1765:1833" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="1839:1907" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="1927:1994" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="2059:2077" ph=" 链接删除 ..." />
+            <marker date="1491714281247" expanded="true" signature="2117:2274" ph="{...}" />
+            <marker date="1491714281247" expanded="true" signature="2199:2230" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="2236:2267" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="2282:2298" ph=" 编辑 ..." />
+            <marker date="1491714281247" expanded="true" signature="2335:2444" ph="{...}" />
+            <marker date="1491714281247" expanded="true" signature="2452:2468" ph=" 更改 ..." />
+            <marker date="1491714281247" expanded="true" signature="2507:2809" ph="{...}" />
+            <marker date="1491714281247" expanded="true" signature="2568:2802" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="2658:2719" ph="..." />
+            <marker date="1491714281247" expanded="true" signature="2725:2792" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
           <folding />
         </state>
       </provider>

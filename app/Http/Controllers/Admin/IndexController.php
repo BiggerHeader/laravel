@@ -10,7 +10,7 @@ class IndexController extends CommonController
 {
     public function index(){
 
-        return view('admin/index');
+        return view('Admin/index');
         //触发事件
 
     }
@@ -18,6 +18,6 @@ class IndexController extends CommonController
 
     public function info()
     {
-        return view('admin/info');
+        return view('Admin/info');
     }
 }
