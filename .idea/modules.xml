@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/laravel.iml" filepath="$PROJECT_DIR$/.idea/laravel.iml" />
+      <module fileurl="file://E:/wamp64/www/yii/.idea/yii2.iml" filepath="E:/wamp64/www/yii/.idea/yii2.iml" />
+      <module fileurl="file://E:/wamp64/www/zhihu/.idea/zhihu.iml" filepath="E:/wamp64/www/zhihu/.idea/zhihu.iml" />
     </modules>
   </component>
 </project>

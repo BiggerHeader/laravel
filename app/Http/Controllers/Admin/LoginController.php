@@ -33,9 +33,9 @@ class LoginController extends CommonController
             //保存数据
             session(['user' => $check]);
             ///   +++++++++++++++++++++++++++++
-           return redirect('Admin/index');
+           return redirect('admin/index');
         } else {
-            return view('Admin/login');
+            return view('admin/login');
         }
     }
 
@@ -65,7 +65,7 @@ class LoginController extends CommonController
     public function logout()
     {
         session(['user' => null]);
-        return redirect('Admin/login');
+        return redirect('admin/login');
 
     }
     /*
@@ -104,6 +104,6 @@ class LoginController extends CommonController
             }
 
         }
-        return view('Admin.chpass');
+        return view('a.chpass');
     }
 }
